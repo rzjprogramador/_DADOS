@@ -1,0 +1,19 @@
+# CRIAR 
+
+POST {{host}}/usuario-create-update
+Content-Type: application/json
+
+{
+    "nome": "10",
+    "email": "10",
+    "password": "1111",
+    "username": "userUm", 
+    "tipoUser" : "tipo user um"
+}
+
+### ==============================
+
+# VER TODOS
+
+
+### ==============================

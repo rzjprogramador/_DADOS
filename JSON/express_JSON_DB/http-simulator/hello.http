@@ -1,0 +1,24 @@
+# LER - BUSCAR TODOS
+GET {{host}}/hellos
+
+###
+
+# INSERIR ADICIONAR
+POST {{host}}/hellos
+Content-Type: application/json
+
+{
+    "nome": "5",
+    "email": "...",
+    "senha": "..."
+}
+
+###
+# ATUALIZAR
+PUT {{host}}/hellos/1658706908360
+Content-Type: application/json
+
+{
+    "nome": "1 A- ",
+    "senha": "1"
+}

@@ -1,0 +1,9 @@
+{
+  /*  VARIAVEIS DE AMBIENTE PARA TEST HTTP */
+  "rest-client.environmentVariables": {
+     "Local Env": {
+         "host": "http://localhost:5002"
+     },
+ },
+
+}

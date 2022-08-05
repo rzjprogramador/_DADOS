@@ -1,0 +1,14 @@
+{
+  "name": "Javascript__Node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/json.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+  
+}

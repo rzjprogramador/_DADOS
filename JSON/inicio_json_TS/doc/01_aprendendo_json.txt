@@ -1,0 +1,4 @@
+Sync = sincrono , faz a tarefa e ja retorna o resultado , nao precisa de um callback pra trazer o resultado.
+
+// LER UM ARQUIVO
+fs.readFileSync( caminhoArquivo, codificacaoSaida, )

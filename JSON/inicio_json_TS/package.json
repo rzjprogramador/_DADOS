@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules -r tsconfig-paths/register src/inicio_json/promises/03_UPDATE_com_promises.ts",
+    "start": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules -r tsconfig-paths/register src/inicio_json/promises/array.ts",
     "dev": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules -r tsconfig-paths/register src/_servers/index.ts",
     "build": "rimraf dist && tsc -p tsconfig-build.json",
     "nao": "npx dotenv-cli -e .env -- npx prisma migrate reset --force --skip-generate --preview-feature",

@@ -1,0 +1,59 @@
+{
+  "name": "graphql_rest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules -r tsconfig-paths/register src/_servers/index.ts",
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
+    "nao": "npx dotenv-cli -e .env -- npx prisma migrate reset --force --skip-generate --preview-feature",
+    "dev:rest": "ts-node-dev --respawn --watch 'src/**' --transpile-only --ignore-watch node_modules -r tsconfig-paths/register src/_app_rest/server/express_server/server.ts",
+    "vitest": "vitest",
+    "pretest": "npx dotenv-cli -e .env.test -- npx prisma migrate reset --force --skip-generate --preview-feature",
+    "linter": "eslint"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.1.1",
+    "apollo-server": "^3.8.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.5.0",
+    "graphql-tools": "^7.0.5",
+    "module-alias": "^2.2.2",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.6.0",
+    "vite-tsconfig-paths": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^28.1.1",
+    "@types/node": "^17.0.24",
+    "@types/pg": "^8.6.5",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.1",
+    "pg": "^8.7.3",
+    "prettier": "^2.6.2",
+    "prisma": "^4.1.1",
+    "supertest": "^6.2.2",
+    "ts-jest": "^28.0.4",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.6.3",
+    "vitest": "^0.13.1"
+  },
+  "_moduleAliases": {
+    "@src/": "./src/"
+  },
+  "prisma": {
+    "seed": "ts-node -r tsconfig-paths/register prisma/seed.ts"
+  }
+}

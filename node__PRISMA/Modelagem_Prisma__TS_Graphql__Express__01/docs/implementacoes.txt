@@ -1,3 +1,0 @@
-# LOGIN
-Criar Session > buscar usuario pelo campo unico > 
-// asessao vai ter uma usuario , que tera acesso via campo unico a sessao.

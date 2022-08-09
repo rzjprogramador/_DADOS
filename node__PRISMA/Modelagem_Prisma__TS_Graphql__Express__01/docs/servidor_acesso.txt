@@ -1,0 +1,8 @@
+# VARIAVEIS DE AMBIENTE - SERVIDOR
+
+Variaveis de Ambiente indicando as portas do servidor
+São iguais e estao no arquivos: .env & .vscode/settings
+Sõa utilizados em src/globals/env/enviroments.ts
+
+---
+

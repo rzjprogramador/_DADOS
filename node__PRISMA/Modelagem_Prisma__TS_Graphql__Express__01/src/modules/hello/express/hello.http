@@ -1,0 +1,15 @@
+###
+GET {{host}}/inicio
+Content-Type: application/json
+
+###
+POST {{host}}/create-hello
+Content-Type: application/json
+
+{
+    "helloNome": "entityNome 6 ",
+    "nome": "nome  6 ",
+    "email": "email@email  6 ",
+    "password": "pass",
+    "tipoHello": "tipo em breve"
+}

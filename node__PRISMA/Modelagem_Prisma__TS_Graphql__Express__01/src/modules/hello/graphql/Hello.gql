@@ -1,0 +1,31 @@
+type Hello {
+  # OBS: CAMPOS OPCIONAIS QUE TEM VALOR VINDOS DO SISTEMA DECLARO AQUI NO TYPE DA ENTIDADE
+  id: String
+  uid: String
+
+  helloNome: String
+  nome: String
+  email: String
+  password: String
+  tipoHello: String
+}
+
+input CreateHelloInput {
+  helloNome: String
+  nome: String
+  email: String
+  password: String
+  tipoHello: String
+}
+
+# helloNome, nome, email, password, tipoHello
+
+### PONTO DE ENTRADA ======================= ###
+
+type Query {
+  inicio: String
+}
+
+type Mutation {
+  createHello(data: CreateHelloInput): Hello
+}
